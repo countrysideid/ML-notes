@@ -4,3 +4,21 @@ pip install -r requirements.txt
 
 conda env export > environment.yml
 conda env create -f environment.yml
+
+path_to_dat = ''
+path_to_save=''
+
+
+logpath = path_to_save + '/logv2.txt'
+logf = open(logpath, "a")
+for :
+    
+    
+        try:
+            save_file()
+        except Exception as e:
+#             with open(logpath, 'a') as f:
+            logf.write("Problem: {} /n".format(str(e)))
+#             f.close()
+            continue
+f.close()
